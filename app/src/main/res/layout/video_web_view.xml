@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.shawnway.nav.app.wtw.view.X5WebView
+            android:layout_above="@+id/web_joinact"
+            android:id="@+id/web_view"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+        </com.shawnway.nav.app.wtw.view.X5WebView>
+        
+        <Button
+            android:id="@id/web_joinact"
+            style="@style/Button.main"
+            android:text="参与活动"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

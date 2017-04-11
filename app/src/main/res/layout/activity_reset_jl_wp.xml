@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="密码将自动重置位赢天下登录密码" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/ll_iv_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_phone"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/et_iv_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请输入图形验证码"
+                android:inputType="number"
+                android:padding="@dimen/dp_8"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/dp_14"
+                tools:src="@drawable/loa" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/ll_iv_code"
+            android:layout_marginRight="@dimen/dp_36"
+            android:text="(点击图片刷新)" />
+
+        <LinearLayout
+            android:id="@+id/ll_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_iv_code"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_22"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:hint="请输入短信验证码"
+                android:inputType="number"
+                android:padding="@dimen/dp_8"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_send_sms_code"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:background="@color/appcolor"
+                android:gravity="center"
+                android:text="@string/get_identify_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/main_gray_TextSize" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset_pwd_wp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp_36"
+            android:layout_marginRight="@dimen/dp_36"
+            android:layout_marginTop="@dimen/dp_22"
+            android:background="@color/appcolor"
+            android:text="重置密码"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

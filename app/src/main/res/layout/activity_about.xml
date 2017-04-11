@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:text="赢天下"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/activity_about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-light"
+        android:text="版本xx.xx"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#5e5e5e" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="#8e8e8e" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="\t\t\t\t赢天下APP立足于新型的交易模式，完美的投资体验，寓教于乐的投资教育，秉承“诚信合作、多元共赢”的经营理念，用心满足每一位客户的投资需求，持续提升经营质量和效益，构建以人为本 360°立体服务，致力于打造成为投资者首选的金融服务机构。帮助您获得投资回报并有效降低交易成本是我们矢志不渝的服务理念!"
+        android:textColor="@android:color/primary_text_light" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="#8e8e8e" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="\t\t\t\t微成本、微风险、微时间、微操作，寻常百姓秒懂秒玩的新型交易模式，完美投资体验，快速高速投资服务，寓教于乐的投资教育，开启指尖投资模式，真正的随时随地移动理财，一切尽在嘉投微盘！"
+        android:textColor="@android:color/primary_text_light" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="#8e8e8e" />
+
+    <TextView
+        android:id="@+id/activity_about_wxnum"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="微信号：xxxxx" />
+
+</LinearLayout>

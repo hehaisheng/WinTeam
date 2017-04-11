@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_10"
+    android:paddingTop="@dimen/dp_10">
+
+
+    <CheckBox
+        android:id="@+id/cb_choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_weight="0.2"
+        android:button="@drawable/cb_single_choice" />
+
+    <ImageView
+        android:id="@+id/proImg"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        tools:src="@drawable/pixel" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/productName"
+            style="@style/normalTextStyle"
+            tools:text="Google Pixel" />
+
+        <TextView
+            android:id="@+id/proPoint"
+            style="@style/grayTextStyle"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@color/textColor_yellow"
+            tools:text="积分：1000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/addQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add" />
+
+                <TextView
+                    android:id="@+id/proQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_pro_num"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_22"
+                    android:paddingRight="@dimen/dp_22"
+                    tools:text="1" />
+
+                <ImageView
+                    android:id="@+id/reduceQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reduce" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/deletePro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cut" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

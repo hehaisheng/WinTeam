@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shawnway.nav.app.wtw.module.user.message_center.CenterMessageActivity">
+
+    <include layout="@layout/include_top_gray"/>
+
+    <include layout="@layout/space_15_height"/>
+    <RelativeLayout
+        android:id="@+id/activity_center_tran"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:background="@drawable/selector_fragment_user_bg">
+
+        <TextView
+            android:id="@+id/activity_setting_messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/user_textColor"
+            android:text="@string/activity_center_tran"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arr_s"/>
+
+    </RelativeLayout>
+    <include layout="@layout/space_1_height"/>
+    <RelativeLayout
+        android:id="@+id/activity_center_sys"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:clickable="true"
+        android:background="@drawable/selector_fragment_user_bg">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/user_textColor"
+            android:text="@string/activity_center_sys"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arr_s"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

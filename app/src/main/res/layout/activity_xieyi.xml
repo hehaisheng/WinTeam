@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+ <include layout="@layout/include_top_gray"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="客户协议书"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一、注意事项"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        尊敬的客户，在您向本公司广东爱赚商贸有限公司（以下简称“会员单位”）申请开设粤国际微盘交易账户以开展广东国际商品交易中心有限公司（以下简称“交易中心”）挂牌商品交易业务之前，请务必认真阅读本协议所有条款及相关附件。"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        您同意并接受本协议后，本协议对协议各方即产生法律效力。只要您点击“同意”按钮，即表示您已经同意并签署了本协议。"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="二、免责声明"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="        会员单位在此特别提示，而且客户在此特别声明，客户已经完全知悉、理解、接受及同意以下涉及会员单位可能免除责任的相关情况："
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="
+（一）作为参与交易业务的一方，会员单位及其工作人员不得向客户提供挂牌商品交易业务的操作建议。会员单位及其工作人员向客户作出操作建议、作出获利或不遭受损失的担保或承诺等均属违反交易中心规定的行为，不具有法律约束力，客户据此进行交易产生的亏损由客户自己承担，并不得追究直接责任方以外的第三方的责任。"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+（二）客户有义务保管好交易账号与密码及银行账号与密码，避免泄露，因保管不善导致账号、密码泄露而引起的风险由客户自行承担，会员单位不负有任何责任。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+（三）由于市场情况或其他的特殊原因，会员单位可能无法在客户指定的价位买卖，此情形下，会员单位在通知客户后，若客户未发出新的交易指令明确交易价位的，会员单位将暂停交易，并可即时免除迟延交易责任。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+（四）由于会员单位并不能控制电讯信号的中断和连接以及互联网的畅通，也不能保证客户自身网络设备及电讯设备的稳定性，由此等原因而使客户遭受的损失，由客户自行承担，会员单位不负有任何责任。"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（五）由于价格剧烈波动而出现裂口性的不连续报价引起客户单据以直接跳空的价格成交，以至于客户的亏损超过其保证金净值，此种情况属于不可抗拒的系统性风险，会员单位保留其向客户追索的权利，客户必须履行其追加交易保证金的义务，不得提出任何异议。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（六）交易中心的交易系统以及客户使用的客户端因地震、水灾、火灾、暴动、罢工、战争、政府管制、国际或国内的禁止、限制或保障性措施以及停电、技术故障、电子故障、网络攻击、电讯信号的中断、电讯信号连接失误以及互联网的畅通程度、网络设备及电讯设备的稳定性等不可抗力因素导致的交易中断、延误等风险，属于不可抗力风险，会员单位不承担任何责任。但会员单位将会积极采取包括但不限于提前休市、暂停交易等补救措施，以减少因不可抗力造成的损失。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（七）根据交易中心规则制度应由客户自行承担损失的，会员单位不承担责任。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        客户、会员单位根据中华人民共和国有关的法律、法规及交易中心相关交易规则、业务规定及管理制度（以下统称为“规则制度”），就双方进行交易中心挂牌商品交易业务的相关事项达成一致，并自愿签订本协议。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第一条  相关定义                                                                      "
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="       （一）本协议所称“粤国际微盘”指由交易中心提供的商品服务、商品管理的微信交易平台。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="       （二）本协议所称“会员单位”为经交易中心批准授予的挂牌会员，在粤国际微盘及交易中心授权的其他平台上开展交易中心挂牌商品现货电子交易业务的企业法人或者其他经济组织。 "
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="       （三）本协议所称“客户”，指向会员单位申请开户，并同意在粤国际微盘平台上与会员单位开展交易中心挂牌商品交易业务的投资者。"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  第二条  交易事项"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）会员单位和客户自愿根据本协议及交易中心规则制度，在粤国际微盘平台上开展交易中心的挂牌商品交易业务。  会员单位和客户在粤国际微盘上开展的挂牌商品交易业务，属于实盘交易，会产生真实交易的法律后果，客户与会员单位一旦参与交易，即视为其接收并认可交易所产生的风险及法律后果。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）会员单位和客户同意共同委托交易中心为双方之间的挂牌商品交易业务提供相关服务和进行监督管理。交易中心的服务内容、相关职责和权限以交易中心相关规定执行。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（三）会员单位和客户自行对交易中心挂牌商品交易业务承担法律后果，自享收益，自担风险和亏损。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（四）会员单位和客户均理解、同意和接受：
+"
+            />  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    1、 以相关法律法规及交易中心规则制度作为会员单位和客户之间交易中心挂牌商品交易业务的相关依据、准则和行为规范。
+"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="    2、 本协议签订后，交易中心制定、修订或颁布的规则制度自动适用于本协议，无需会员单位和客户另行确认；本协议签订后交易中心制定、修订或颁布的规则制度与本协议或现行规则制度不一致的，以最新生效的规则制度为准。
+"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第三条  交易资格及交易申请
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）会员单位声明已获得交易中心批准并取得挂牌会员的会员交易资格。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）客户在与会员单位签署本协议并完成交易账户的开设手续后，客户取得粤国际微盘的交易资格。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（三）客户向会员单位申请开设交易账户时须确认签署《开户申请与承诺》等文件并向会员单位提交其他相关申请资料，客户应妥善保管自己的用户名、登陆密码、交易密码，并对其在粤国际微盘的所有交易行为承担一切法律责任。  客户应保证其提交会员单位的开户申请及相关资料的合法性、合规性、真实性及有效性。如客户提供的开户申请资料虚假，须承担因此而引起的一切责任。 "
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第四条   交易标的
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="        客户及会员单位可以交易在粤国际微盘平台上允许交易的所有交易品种。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第五条  报价与下单
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）交易中心综合挂牌商品的国际现货市场价格和国内其他现货市场价格以及市场供求关系等，连续报出交易中心挂牌商品现货的人民币中间指导价。会员单位根据交易中心的报价管理规则及发布的中间指导价，综合其自身的现货存量或需求量，连续报出交易中心挂牌商品现货的人民币买入价及/或卖出价。
+
+会员单位的报价视为对客户的要约，但本协议另有约定或交易中心规则制度另有规定的除外。"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）客户按照相关规则制度的要求，根据会员单位的报价，向会员单位提交买入或卖出的交易指令，即视为对会员单位的承诺，会员单位与客户之间的交易合同即告成立。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第六条  交易方式和账户管理
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(一) 客户通过粤国际微盘交易系统与会员单位进行交易。所有客户通过粤国际微盘交易系统发出的交易指令，一经发出，均不得撤回或撤销。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(二) 会员单位仅通过客户交易账户的账号和密码核实客户的身份。凡通过客户的交易账户的账号和密码进行的交易操作，无论是否确属本人进行的交易，均视为是客户本人（或本机构）操作。
+
+客户必须对交易账户和所有密码进行妥善保管。客户密码丢失的，可根据交易中心规则制度申请密码重置。所有因客户密码遗失及被盗导致的损失，或因保管不善及其他非可归责于会员单位、交易中心而造成的一切后果，均与会员单位及交易中心无关，由客户自行承担。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(三) 客户的电话录音、电脑或手机记录等在交易过程中形成的记录均具有法律效力，客户认可该记录的证明力。所有客户通过粤国际微盘交易系统发出的交易指令，以交易中心记录的数据为准。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(四) 当客户开户申请资料发生变化时，客户应及时以有效方式通知会员单位；否则，因客户未及时通知会员单位而造成的损失，应由客户承担。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(五) 客户的交易账户只限本人使用，不得转借他人，如交易账户转借所引起的一切纠纷和损失均由客户自行解决和承担。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(六) 客户不得以任何方式委托会员单位及其工作人员直接或间接操作交易账户、代替客户下达交易指令等方式管理其交易账户，否则客户应自行承担后果。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第七条  结算清算和履约准备金
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(一) 客户、会员单位双方同意并接受交易中心实行的结算和清算制度，并委托交易中心对双方在粤国际微盘平台上的全部交易业务提供结算与清算服务；各方之间有关结算及清算的权、责按交易中心届时有效的结算与清算的相关规定执行具体按交易中心的规则制度执行。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(二) 客户、会员单位参与交易中心挂牌商品交易业务，应向交易中心指定的专用结算账户预存履约准备金，以确保交易中心挂牌商品现货交易价款的按时、足额支付。客户、会员单位委托交易中心对各自缴存的履约准备金进行管理，客户、会员单位对预存的履约准备金不享有任何利息。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" (三) 客户、会员单位应在交易中心指定的清算银行开设资金清算账户并签署资金存（托）管协议，以实现履约保证金与其资金清算账户之间的资金划转。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第八条  风险管理
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）会员单位及客户双方同意委托交易中心对各自交易账户进行风险管理，同意遵守交易中心制定的相关风险管理制度，包括但不限于接受和服从交易中心采取的对交易账户的持仓风险进行管理的措施。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）客户理解、接受并同意：在客户违规，或者由于国家法律、法规、政策的变化、交易中心规则制度的修改、遇到紧急情况并且交易中心认为必要的情况下，会员单位有权对客户采取限制或干预交易的风险管理措施；会员单位采取的限制或干预交易的风险管理措施，应当符合交易中心的规则制度和相关要求。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第九条  交易费用
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）客户应向会员单位支付交易中心挂牌商品交易手续费，交易手续费的收费标准按交易中心的规则制度执行。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）客户参与交易中心挂牌商品交易业务涉及的其他相关费用，包括但不限于库存费、提货费、交货费等，按交易中心的规则制度执行。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第十条   交易保证
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）会员单位保证：会员单位及其工作人员均不得在本协议约定方式以外，与客户私下达成交易，或者以利益共享、风险共担为承诺，利用客户资金从事代客理财业务，不得对客户进行类似收益保证的承诺。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）客户保证：客户不得在本协议约定方式以外，与会员单位或其工作人员私下达成交易，或者接受以利益共享、风险共担为承诺，委托会员单位或会员单位工作人员从事代客理财业务。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（三）客户必须确保其本人有满足维系粤国际微盘交易系统顺利运行的软件和硬件系统。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（四）会员单位不得接受客户的任何质押或抵押行为。客户不得将本协议书中的任何权益全部或部分转让。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第十一条   保密
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未经协议对方事先书面同意，任何一方不得将本协议的签订、履行情况及在交易过程中所知悉的协议对方所拥有的机密信息向交易中心以外的任何第三方作任何形式的披露、通知和公布，但交易中心规则制度另有规定的除外。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第十二条  违约责任
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="任何一方违反本协议约定的义务均视为违约，应依法承担违约责任，并赔偿守约方因此而遭受的经济损失和支出的一切费用，包括但不限于直接损失及实现债权的费用、律师费用等。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第十三条  协议生效、变更和终止
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）本协议经客户以电子化签约方式（即客户点击“同意”按钮）确认签署后即生效。非依本协议约定方式或法律规定方式终止，长期保持有效。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）本协议未尽事宜，以交易中心的规则制度为准。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（三）发生如下情形之一的，本协议终止：
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1、 会员单位被交易中心终止交易资格或取消会员资格的；
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2、 根据法律法规和交易中心规则制度终止本协议的。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（四）因不可抗力致使本协议不能履行的，双方应协商确定本协议继续履行的条件或终止本协议。若双方不能就继续履行的条件或本协议的终止达成一致意见的，本协议自行终止。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（五）本协议终止时，客户应自行转让持仓并注销其交易账户，并结清与交易中心和会员单位的所有费用和欠款、违约金等，且在终止协议当天无任何交易记录。否则，会员单位可以采取强制销户等措施处理，由此产生的一切责任及损益由客户自行承担。交易中心规则制度另有规定的，按相关规定处理。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（六）本协议终止后，会员单位、客户双方应当遵循诚实信用原则，履行通知、协助、保密等附随义务。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第十四条  争议解决
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="如客户、会员单位发生与本协议相关的一切争议，应以友好协商的原则商议解决。经协商不能达成一致意见的，可向交易中心申请调解；调解不成的，任何一方可提交广州仲裁委员会，按照申请仲裁时其现行有效的仲裁规则进行仲裁。仲裁裁决是终局的，对双方均有约束力。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="十五   其他条款
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（一）本协议书交由交易中心通过电子化存档方式签约和存档。会员单位、客户均认可盖电子化签约和存档文件的法律效力，如各方对协议签署及版本内容产生争议的，以交易中心系统数据库数据为准。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（二）如各方对本协议各项条款存在理解上的争议或纠纷，可提交交易中心解释，并以交易中心解释为准。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（三）客户申请开户时填写的《开户申请与承诺》及提交的相关资料均为本协议书的重要组成部分，与本协议具有同等法律效力。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（四）本协议仅适用于在粤国际微盘平台上开展的挂牌商品交易业务的会员单位及客户。
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="（五）会员单位、客户再次确认并同意本协议中约定的争议解决条款“如客户、会员单位发生与本协议相关的一切争议，应以友好协商的原则商议解决。经协商不能达成一致意见的，可向交易中心申请调解；调解不成的，任何一方可提交广州仲裁委员会，按照申请仲裁时其现行有效的仲裁规则进行仲裁。仲裁裁决是终局的，对双方均有约束力。”
+"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+
+
+
+
+开户申请与承诺"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+
+
+    我方自愿进入广东国际商品交易中心平台上开展挂牌商品交易业务，并依照公开、公平、公正、诚实的原则，自愿向广东爱赚商贸有限公司（以下简称“会员单位”）申请开设粤国际微盘交易账户并作出如下承诺：
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1、       本次开户申请是我方真实意思表示，所提交材料及申请内容不存在虚假记载、误导性陈述或重大遗漏，我方对其合法性、合规性、真实性和有效性承担法律责任；
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2、       我方系具备完全民事行为能力的自然人/合法有效存续的机构；
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3、       我方已充分了解并接受交易中心的规则制度，已认真考虑了交易中心挂牌商品交易业务的行业、市场、政策以及其他不可预计的各项风险因素，愿意承担可能存在的一切交易/投资/市场/资金/政策等风险；
+"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4、       我方已经同意并签署《客户协议书》；
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5、       我方保证符合交易中心规定的开户条件，且非交易中心禁入者；
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6、       我方保证将按照有关规定亲自办理交易履约准备金存管业务；
+"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7、       我方已掌握交易软件各项功能并能熟练操作；
+"
+            /> <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8、       我方申请立即开设交易账户；
+"
+        /> <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9、     我方保证不委托任何机构和个人以操作交易账户或代替我方下达交易指令等方式代为理财，否则，愿意承担由此造成的一切损失及后果；
+"
+        /> <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="10、我方已充分了解并同意：所有针对交易中心挂牌商品交易业务的获利保证或不发生亏损的承诺均为虚假承诺，并且任何关于交易中心挂牌商品交易市场行情走向的分析或肯定性结论均不构成任何的承诺或决策依据，如因轻信该等虚假承诺、行情分析或肯定性结论或其它而造成的损失及后果将由我方自行承担。
+
+我方保证并遵守以上承诺，如违反上述承诺或有违规行为，给会员单位或交易中心等相关各方造成的损失，我方愿意承担法律责任及相应的经济赔偿责任。
+"
+        />
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

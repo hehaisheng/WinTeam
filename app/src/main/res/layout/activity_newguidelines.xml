@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextView_Main_black"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="20dp"
+                android:text="一、充值" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:text="1.进入充值页面，选择充值金额（如您要充值的金额未列出，可反复多次充值，不收任何手续费），输入银行卡号，点击“立即充值”。" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/guide_charge" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="5dp"
+                android:text="2.充值成功后可以在持仓页面看到微盘的资金余额。" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/guide_carry" />
+
+            <TextView
+                style="@style/TextView_Main_black"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="5dp"
+                android:text="二、建仓和持仓" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:text="1.在粤国际微盘交易界面，有三种交易品种（粤银、粤铜、粤油），各品种分别有两个规格的产品，您可自由选择想要交易的产品以及想要成交的方向（买涨或买跌）。" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@mipmap/guide_good1" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@mipmap/guide_good2" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="5dp"
+                android:text="2.进入建仓页面，选择您想要购买的交易产品、交易方向以及建仓手数（如您账户中持有赢家券，默认勾选使用），设置好止盈止损比例，点击“确认建仓”即可。" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@mipmap/guide_build_down" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@mipmap/guide_build_up" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="5dp"
+                android:text="3.建仓成功后，您可在“持仓”界面查看持仓单情况、收支和交易明细，也可以手动平仓。" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/guide_carry" />
+
+            <TextView
+                style="@style/TextView_Main_black"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="5dp"
+                android:text="三、提现" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:text="1.点击进入提现页面" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@mipmap/guide_cashout" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:text="2.在提现页面输入相应信息，点击“立即提现”即可。" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="3dp"
+                android:text="3.注意点：" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:text="提现时的银行卡账号为首次充值时绑定的银行卡账号；" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:text="如忘记具体开户支行信息，可拨打发卡银行服务热线查询；" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:text="提现信息必须完整准确，如有误则不能通过银行审核，提现资金将再次回到微盘账户中。" />
+
+            <TextView
+                style="@style/TextView_black_normal"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="3dp"
+                android:text="4.点击“立即提现”后，系统提示提现成功，资金将会在3个工作日内到帐【注：周六日及节假日除外】，请留意账户余额为提现后的余额。" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

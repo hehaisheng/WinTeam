@@ -1,0 +1,172 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+
+
+
+    /**
+     * 极光推送的so库
+     */
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+    }
+    defaultConfig {
+        applicationId "com.shawnway.nav.app.wtw"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 20
+        versionName "3.1.5"
+        //超过64K方法分包
+        multiDexEnabled true
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a','x86','x86_64', 'mips', 'mips64'
+        }
+        // 默认是umeng的渠道
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+
+    }
+
+    // recommend
+    dexOptions {
+        jumboMode = true
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    tasks.whenTaskAdded{ task ->
+        if( task.name.equals("lint")){
+            task.enabled = false
+        }
+
+    }
+
+    /**
+     * 签名信息
+     */
+    signingConfigs {
+
+        release {
+            storeFile file('D:\\androidjks\\jks\\sign.keystore')
+            storePassword 'shawnway'
+            keyAlias "shawnway"
+            keyPassword 'shawnway'
+        }
+        debug {
+            storeFile file('D:\\androidjks\\jks\\sign.keystore')
+            storePassword 'shawnway'
+            keyAlias "shawnway"
+            keyPassword 'shawnway'
+        }
+    }
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            zipAlignEnabled true
+            // 移除无用的resource文件
+//            shrinkResources true
+            proguardFiles 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+        }
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+
+}
+
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    /*滚轮控件*/
+    compile 'com.wx.wheelview:wheelview:1.3.3'
+    compile files('libs/jpush-android-2.1.9.jar')
+    compile 'noman.weekcalendar:weekcalendar:1.0.6'
+    //AdapterHelper
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.1.3'
+    //Butterknife
+    compile 'com.jakewharton:butterknife:8.2.1'
+    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    //Glide图片加载
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    //Retrofit的Gson适配
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    //Retrofit的Rxjava适配
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //okHttp3日志打印
+    compile('com.squareup.okhttp3:logging-interceptor:3.3.0') {
+        exclude group: 'com.squareup.okhttp3'
+    }
+    //RxAndroid
+    compile 'io.reactivex:rxandroid:1.2.1'
+    // And ProGuard rules for RxJava!
+    compile 'com.artemzin.rxjava:proguard-rules:1.1.6.0'
+    //日志
+    compile 'com.orhanobut:logger:1.15'
+    //MQ
+    compile 'org.zeromq:jeromq:0.3.5'
+    //图表
+    compile project(':MPChartLibrary')
+    //腾讯bugly
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    //其中latest.release指代最新版本
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    //分包支持
+    compile 'com.android.support:multidex:1.0.1'
+    //友盟
+    compile files('libs/SocialSDK_umengsina.jar')
+    compile files('libs/SocialSDK_umengqq.jar')
+    compile files('libs/SocialSDK_umengwx.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_view.jar')
+    //腾讯X5
+    compile files('libs/tbs_sdk_thirdapp_v2.6.0.1045_36900_sharewithdownload_obfs_20161207_162008.jar')
+    //EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //内存泄漏检测
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    compile 'com.zhy:percent-support-extends:1.1.1'
+}

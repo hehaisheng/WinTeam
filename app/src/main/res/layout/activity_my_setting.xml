@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shawnway.nav.app.wtw.module.user.setting.SettingActivity">
+
+    <include layout="@layout/include_top_gray" />
+
+    <include layout="@layout/space_15_height" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/activity_setting_suggestions"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_fragment_user_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_setting_suggestion"
+            android:textColor="@color/user_textColor" />
+
+        <include layout="@layout/space_1_height" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arr_s" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_fragment_user_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="清除缓存"
+            android:textColor="@color/user_textColor" />
+
+        <include layout="@layout/space_1_height" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arr_s" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_setting_wins"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_fragment_user_bg"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_setting_wins"
+            android:textColor="@color/user_textColor" />
+
+        <include layout="@layout/space_1_height" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arr_s" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_setting_versions"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_fragment_user_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/activity_setting_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/activity_setting_version"
+            android:textColor="@color/user_textColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/activity_setting_version"
+            android:src="@mipmap/update"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <include layout="@layout/space_1_height" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/arr_s" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_setting_return"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_main_bigbtn_bg"
+        android:text="退出当前账号"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

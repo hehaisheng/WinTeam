@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--系统自带颜色-->
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <color name="colorAccent">#FF4081</color>
+    <!--亮灰色-->
+    <color name="appcolor_lightgray">#f2f2f2</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--透明色-->
+    <color name="transparent">#00000000</color>
+    <!--天蓝色-->
+
+    <color name="divider_color">#eeeeee</color>
+    <!--APP标题栏的颜色25,33,96-->
+    <color name="appcolor">#F44336</color>
+    <!--分割线的颜色-->
+    <color name="line_divider">#eeeeee</color>
+    <!--交易明细数据总计的背景-->
+
+    <!--我的赢家券中金钱数的颜色-->
+    <!--黑色-->
+    <color name="app_textColor">#ff4f4f4f</color>
+    <!--浅黑色-->
+    <color name="app_textColor_tran" >#884f4f4f</color>
+    <!--上拉加载更多的颜色153,153,153-->
+    <color name="user_textColor_gray">#999999</color>
+    <!--我的赢家券中使用期限的颜色102,102,102-->
+    <color name="user_textColor_deepgray">#666666</color>
+    <!--tabstrip没选中时候字体的颜色102,102,102-->
+    <color name="tabStrip_noChoice_textColor">#666666</color>
+    <!--用户中心字体的颜色51,51,51-->
+    <color name="user_textColor">#333333</color>
+    <!--深黄色-->
+    <color name="textColor_deepYellow">#d25e05</color>
+    <!--浅黄色-->
+    <color name="textColor_yellow">#edae33</color>
+
+    <!--亮黄色-->
+    <color name="lightyellow">#e8b305</color>
+    <!--浅亮黄色-->
+    <!--轮播图没选中的点的颜色-->
+    <!--亮红色242,64,23-->
+    <color name="lightred">#f24017</color>
+    <!--浅亮红色242,64,23-->
+    <color name="lightred_tran">#99f24017</color>
+    <!--亮绿色17,201,113-->
+    <color name="lightgreen">#4ac33a</color>
+    <!--浅亮绿色17,201,113-->
+    <!--紫色-->
+    <!--深紫色，首页行情或者资讯btn按下时候的颜色-->
+    <!--红粉-->
+    <!--浅红粉-->
+
+    <!--粉蓝色-->
+    <color name="dialog_btn_cancel">#ce69ce</color>
+    <color name="dialog_btn_cancel_tran">#99ce69ce</color>
+    <color name="minute_zhoutv">#858D93</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_blue">#00a8fc</color>
+    <color name="minute_yellow">#E7B448</color>
+
+    <color name="ma5">#e62b87</color>
+    <color name="ma10">#f0ae0b</color>
+    <color name="ma20">#65a0f2</color>
+
+    <color name="kLine_red">#FB5974</color>
+    <color name="kLine_green">#4ED86A</color>
+
+
+    <color name="text_international_light_red">#f3abab</color>
+    <color name="text_international_light_green">#9ddb97</color>
+
+    <color name="text_primary">#333333</color>
+    <color name="text_gray">#a0a0a0</color>
+    <color name="divider_normal">#d0d0d0</color>
+
+    <color name="diliver_gray">#f5f5f5</color>
+    <color name="diliver_gray_600">#9e9e9e</color>
+    
+    <color name="red_400">#f36c60</color>
+
+
+</resources>

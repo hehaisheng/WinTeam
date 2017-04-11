@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:background="@drawable/wechat_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/jl_wp_layout">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@color/appcolor"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/top_back"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/appcolor"
+            android:onClick="onClick"
+            android:paddingLeft="20.0dip"
+            android:paddingRight="20.0dip"
+            android:src="@mipmap/arr_b"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+
+        <TextView
+            android:transitionName="@string/title"
+            android:id="@+id/top_text_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/dp_60"
+            android:layout_marginRight="@dimen/dp_22"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="标题"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/top_text_right"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:text="@string/action_edit"
+            android:textColor="@color/white"
+            android:textSize="14.0sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentRight="true"
+        android:text="保存"
+        android:background="@color/appcolor"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16" />
+
+    <ImageView
+        tools:background="@drawable/qrcode"
+        android:id="@+id/iv_charge_qrCode"
+        app:layout_marginTopPercent="34%h"
+        android:layout_centerHorizontal="true"
+        android:layout_width="0dp"
+        app:layout_widthPercent="24%h"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%h"
+
+
+       />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

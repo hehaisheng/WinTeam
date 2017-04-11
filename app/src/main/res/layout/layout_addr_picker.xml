@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/cancel"
+            style="@style/grayTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_weight="1"
+            android:text="取消" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="所在地区"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/confirm"
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_marginRight="@dimen/dp_14"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="确定"
+            android:textColor="@color/appcolor" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shawnway.nav.app.wtw.view.city_pick.widget.WheelView
+            android:background="@color/white"
+            android:id="@+id/province"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:itemNumber="3"
+            app:lineColor="@color/divider_color"
+            app:lineHeight="1dp"
+            app:maskHight="32dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/text_gray"
+            app:normalTextSize="13sp"
+            app:selectedTextColor="@color/text_primary"
+            app:selectedTextSize="16sp"
+            app:unitHight="50dp" />
+
+        <com.shawnway.nav.app.wtw.view.city_pick.widget.WheelView
+            android:background="@color/white"
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:itemNumber="3"
+            app:lineColor="@color/divider_color"
+            app:lineHeight="1dp"
+            app:maskHight="32dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/text_gray"
+            app:normalTextSize="13sp"
+            app:selectedTextColor="@color/text_primary"
+            app:selectedTextSize="16sp"
+            app:unitHight="50dp" />
+
+        <com.shawnway.nav.app.wtw.view.city_pick.widget.WheelView
+            android:background="@color/white"
+            android:id="@+id/county"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:itemNumber="3"
+            app:lineColor="@color/divider_color"
+            app:lineHeight="1dp"
+            app:maskHight="32dp"
+            app:noEmpty="true"
+            app:normalTextColor="@color/text_gray"
+            app:normalTextSize="13sp"
+            app:selectedTextColor="@color/text_primary"
+            app:selectedTextSize="16sp"
+            app:unitHight="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

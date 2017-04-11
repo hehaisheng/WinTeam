@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <com.shawnway.nav.app.wtw.view.ProgressLayout
+        android:id="@+id/progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_shopping_car_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/tv_check_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:drawableLeft="@drawable/uns"
+                android:drawablePadding="@dimen/dp_8"
+                android:text="全选"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv_check_all">
+
+                <TextView
+                    android:id="@+id/total_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_toLeftOf="@+id/conclusion"
+                    android:gravity="right|center_vertical"
+                    android:text="合计：0积分" />
+
+                <TextView
+                    android:id="@+id/conclusion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/appcolor"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_14"
+                    android:paddingRight="@dimen/dp_14"
+                    android:text="结算（0）"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </com.shawnway.nav.app.wtw.view.ProgressLayout>
+
+
+</LinearLayout>

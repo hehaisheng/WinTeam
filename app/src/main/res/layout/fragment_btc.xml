@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <com.shawnway.nav.app.wtw.view.ProgressLayout
+            android:id="@+id/ll_btc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_btc_cny"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:textSize="15sp"
+                    tools:text="美原油" />
+
+                <View
+                    android:id="@+id/indicator1"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@id/item1"
+                    android:layout_marginLeft="10dp" />
+
+
+                <TextView
+                    android:id="@+id/rate1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:background="@color/lightgreen"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="@dimen/dp_6"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    tools:text="-2.82%" />
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_toLeftOf="@id/rate1"
+                    android:textColor="@color/lightgreen"
+                    android:textSize="14sp"
+                    tools:text="1650" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ltc_cny"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:textSize="15sp"
+                    tools:text="美原油" />
+
+                <View
+                    android:id="@+id/indicator2"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@id/item2"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/rate2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:background="@color/lightgreen"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="@dimen/dp_6"
+                    android:paddingLeft="@dimen/dp_6"
+                    tools:text="-2.82%" />
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_toLeftOf="@id/rate2"
+                    android:textColor="@color/lightgreen"
+                    android:textSize="14sp"
+                    tools:text="1650" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_eth_cny"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:textSize="15sp"
+                    tools:text="美原油" />
+
+                <View
+                    android:id="@+id/indicator3"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@id/item3"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/rate3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:background="@color/lightgreen"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="@dimen/dp_6"
+                    android:paddingLeft="@dimen/dp_6"
+                    android:textSize="14sp"
+                    tools:text="-2.82%" />
+
+                <TextView
+                    android:id="@+id/price3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_toLeftOf="@id/rate3"
+                    android:textColor="@color/lightgreen"
+                    android:textSize="14sp"
+                    tools:text="1650" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_divider" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rl_etc_cny"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:textSize="15sp"
+                    tools:text="美原油" />
+
+                <View
+                    android:id="@+id/indicator5"
+                    android:layout_width="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/item5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@id/item5"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/rate5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/price5"
+                    android:layout_alignBottom="@+id/price5"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/lightgreen"
+                    android:gravity="center"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="@dimen/dp_6"
+                    android:paddingLeft="@dimen/dp_6"
+                    tools:text="-2.82%" />
+
+                <TextView
+                    android:id="@+id/price5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_toLeftOf="@id/rate5"
+                    android:textColor="@color/lightgreen"
+                    android:textSize="14sp"
+                    tools:text="1650" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_divider" />
+
+
+            </RelativeLayout>
+
+        </com.shawnway.nav.app.wtw.view.ProgressLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

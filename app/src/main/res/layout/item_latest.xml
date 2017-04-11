@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_fragment_user_bg">
+
+    <include layout="@layout/space_15_height"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item_latest_title"
+            style="@style/TextView_Main_black"
+            android:text="赢天下视频直播间来袭！"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:paddingTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/item_latest_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:src="@drawable/loa"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin"
+            android:scaleType="centerCrop"/>
+
+        <include layout="@layout/space_1_height"/>
+
+        <TextView
+            android:id="@+id/item_latest_time"
+            style="@style/TextView_Main_gray"
+            android:textSize="12sp"
+            tools:text="活动时间：2016-07-14到2016-08-09"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_divider">
+
+    <include layout="@layout/include_top_gray"/>
+
+    <include layout="@layout/space_15_height"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:text="@string/phone_number"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin"/>
+
+        <EditText
+            style="@style/EditText"
+            android:id="@+id/activity_login_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:inputType="number"
+            android:background="@null"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:hint="@string/enter_phone_number"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/space_1_height"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:text="@string/login_pwd"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin"/>
+
+        <EditText
+            style="@style/EditText"
+            android:id="@+id/activity_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:inputType="numberPassword"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:hint="@string/enter_login_pwd"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activity_login_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:text="@string/title_activity_login"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_main_bigbtn_bg"
+        android:textSize="18sp"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        
+        <TextView
+            android:id="@+id/activity_login_tv_register"
+            android:clickable="true"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/selector_clickable_textgray_bg"
+            style="@style/TextView_lightyellow_normal"
+            android:layout_alignParentLeft="true"
+            android:text="@string/fast_register"/>
+
+        <TextView
+            android:id="@+id/activity_login_tv_forgetpwd"
+            android:clickable="true"
+            android:paddingLeft="@dimen/normal_margin"
+            android:paddingRight="@dimen/normal_margin"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/selector_clickable_textgray_bg"
+            style="@style/TextView_lightyellow_normal"
+            android:layout_alignParentRight="true"
+            android:text="@string/forget_pwd"/>
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="由"/>
+
+        <TextView
+            android:id="@+id/shawnway"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="尚为软件"
+            android:textColor="@color/lightred"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提供技术支持"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

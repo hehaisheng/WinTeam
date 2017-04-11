@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/item_impornews_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_main_bigbtn_bg"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_4"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:paddingTop="@dimen/dp_4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/home_news_item_btn_textSize"
+            tools:text="重要消息" />
+
+        <TextView
+            android:id="@+id/item_impornews_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_4"
+            android:textColor="@color/text_primary"
+            android:textSize="12sp"
+            tools:text="17:19" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_importance"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_impornews_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_primary"
+            tools:text="标题"
+            android:textSize="@dimen/main_black_TextSize" />
+
+        <TextView
+            android:id="@+id/item_impornews_tv_str"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="内容"
+            android:textColor="#ae000000"
+            android:textSize="@dimen/main_gray_TextSize" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

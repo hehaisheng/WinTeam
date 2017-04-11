@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/home_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7月"
+                android:textSize="@dimen/main_gray_TextSize"
+                android:textColor="@color/user_textColor_gray"
+                android:layout_marginLeft="@dimen/normal_margin"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/fragment_econcalen_lastweek"
+                android:padding="5dp"
+                android:clickable="true"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:text="上一周"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_econcalen_nextweek"
+                android:padding="5dp"
+                android:clickable="true"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:text="下一周"/>
+
+        </LinearLayout>
+
+        <noman.weekcalendar.WeekCalendar
+            android:id="@+id/fragment_econcalen_weekcalendar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            app:daysBackgroundColor="@color/white"
+            app:weekBackgroundColor="@color/white"
+            app:weekTextSize="14sp"
+            app:weekTextColor="@color/user_textColor"
+            app:daysTextColor="@color/user_textColor"
+            app:dayNameLength="threeLetters"
+            app:selectedBgColor="@color/lightred"
+            app:todaysDateBgColor="@color/lightred">
+
+        </noman.weekcalendar.WeekCalendar>
+
+    </LinearLayout>
+
+    <include layout="@layout/space_1_height"/>
+
+    <com.shawnway.nav.app.wtw.view.MyListView
+        android:id="@+id/fragment_econcalen_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.shawnway.nav.app.wtw.view.MyListView>
+    
+</LinearLayout>

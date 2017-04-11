@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginLeft="@dimen/dp_14"
+    android:layout_marginRight="@dimen/dp_14"
+    android:id="@+id/rl_wp_coupon"
+    android:layout_marginTop="@dimen/dp_14"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/wp_cash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="微盘现金券"
+        android:textColor="@android:color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/coupon_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_14"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/myticket_money_textsize"
+        tools:text="￥10" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wp_cash"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_6"
+        android:text="仅限微盘交易使用"
+        android:textColor="@color/text_international_light_red" />
+
+    <TextView
+        android:id="@+id/item_myticket_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"
+        tools:text="使用期限至：2016-6-30" />
+
+</RelativeLayout>

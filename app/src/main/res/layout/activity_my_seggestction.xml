@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shawnway.nav.app.wtw.module.user.setting.FeedBackActivity">
+    <include layout="@layout/include_top_gray" />
+
+    <EditText
+        android:id="@+id/et_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="top"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="有什么想告诉我们？（必填）"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <EditText
+        android:id="@+id/et_phoneNumber"
+        android:maxLength="11"
+        android:inputType="phone"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:hint="请输入您的联系电话（选填）"
+        android:padding="@dimen/activity_horizontal_margin" />
+
+    <Button
+        android:onClick="commitFeedBack"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_main_bigbtn_bg"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8">
+
+        <TextView
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="收货人：" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="收货人姓名"
+            android:padding="0dp"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8">
+
+        <TextView
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="联系电话：" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="联系电话"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:padding="0dp"
+            android:textColor="@color/text_primary"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8">
+
+        <TextView
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="所在地区：" />
+
+        <TextView
+            android:id="@+id/pick_city"
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:drawableRight="@mipmap/arr_s"
+            android:text="请选择" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_8">
+
+        <TextView
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="详细地址：" />
+
+        <EditText
+            android:id="@+id/et_addr_detail"
+            style="@style/grayTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:background="@null"
+            android:hint="街道、楼牌号等"
+            android:maxLines="2"
+            android:padding="0dp"
+            android:textColor="@color/text_primary" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:background="@color/divider_color" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_60"
+        android:background="@drawable/bg_save"
+        android:clickable="false"
+        android:text="保存"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

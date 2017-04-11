@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray"/>
+
+    <com.shawnway.nav.app.wtw.view.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:pstsDividerPadding="10dp"
+        app:pstsDividerColor="@color/lightred"
+        app:pstsIndicatorColor="@color/appcolor"
+        app:pstsIndicatorHeight="0.1"
+        app:pstsShouldExpand="true"
+        app:pstsTabBackground="@color/white"
+        app:pstsUnderlineColor="@color/line_divider"
+        app:pstsUnderlineHeight="1dp"
+        app:selectedTabTextColor="@color/appcolor"
+        app:textcolor="@color/tabStrip_noChoice_textColor"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:background="@color/line_divider">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_centerVertical="true"
+            android:text="@string/goodsname"
+            android:textSize="12dp"
+            android:textColor="@color/tabStrip_noChoice_textColor"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_14"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="@string/chg"
+            android:textSize="12dp"
+            android:textColor="@color/tabStrip_noChoice_textColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="94dp"
+            android:layout_centerVertical="true"
+            android:text="@string/lasttrade"
+            android:textSize="12dp"
+            android:textColor="@color/tabStrip_noChoice_textColor"/>
+
+    </RelativeLayout>
+
+    <com.shawnway.nav.app.wtw.view.MyViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

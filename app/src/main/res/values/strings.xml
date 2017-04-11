@@ -1,0 +1,215 @@
+<resources>
+    <string name="app_name">赢天下</string>
+
+    <string name="loading_more">正在加载更多...</string>
+
+    a
+    <string name="wtw_information_tabtitle">资讯</string>
+
+    <string name="action_edit">编辑</string>
+
+    <string name="user_ticket">我的现金券</string>
+    <string name="user_promotion">邀请好友</string>
+    <string name="user_infocenter">消息中心</string>
+    <string name="user_newact">最新活动</string>
+    <string name="user_trancir">交易圈子</string>
+    <string name="user_guide">新手指引</string>
+    <string name="user_setting">我的设置</string>
+
+    <string name="title_fragment_quotations_microdisk">粤国际</string>
+    <string name="title_fragment_quotations_interfuture">国际期货</string>
+    <string name="title_fragment_quotations_jl_wp">吉交所</string>
+    <string name="title_fragment_quotations_bitcoin">比特币</string>
+
+    <string name="goodsname">交易品名称</string>
+    <string name="lasttrade">最新价</string>
+    <string name="chg">涨跌幅</string>
+
+    <string name="info_transtrategy">交易攻略</string>
+    <string name="info_directsedroom">直播间</string>
+    <string name="next_earn_money">下一个赚钱高手就是你</string>
+    <string name="richlife">专家指导，开启财富人生</string>
+    <string name="info_wherever">走到哪都有最新的行情资讯伴着你</string>
+
+    <string name="home_hotTran">热门交易</string>
+    <string name="home_more">更多</string>
+
+
+    <string name="direction">方向</string>
+    <string name="buy_up">买涨</string>
+    <string name="buy_down">买跌</string>
+    <string name="buy_up_now">立即买涨</string>
+    <string name="buy_down_now">立即买跌</string>
+    <string name="opentran_price">建仓价</string>
+    <string name="number">数量</string>
+
+    <string name="invest_risk">投资有风险，交易需谨慎。做好止损，降低风险</string>
+    <string name="rangle_percent">(范围0-50%)</string>
+    <string name="stop_profit">止盈</string>
+    <string name="stop_loss">止损</string>
+    <string name="pay_sum">支付总额</string>
+    <string name="opentran_prompt">提示：强平时间为次日凌晨04:00</string>
+
+    <string name="evening_up">平仓</string>
+
+    <string name="opening_bank">开户行</string>
+    <string name="enter_bankcard_no">银行卡号</string>
+    <string name="title_activity_login">登录</string>
+    <string name="phone_number">手机号</string>
+    <string name="enter_phone_number">请输入手机号</string>
+    <string name="login_pwd">登录密码</string>
+    <string name="enter_login_pwd">请输入登录密码</string>
+    <string name="fast_register">快速注册</string>
+    <string name="forget_pwd">忘记密码</string>
+
+    <string name="error_system">服务器出了点小问题，请稍后再试</string>
+    <string name="phone_num_cannot_empty">手机号码不能为空</string>
+    <string name="pwd_cannot_empty">密码不能为空</string>
+
+    <string name="register">注册</string>
+    <string name="identify_code">验证码</string>
+    <string name="enter_identify_code">请输入手机验证码</string>
+    <string name="get_identify_code">获取验证码</string>
+    <string name="tran_pwd">交易密码</string>
+    <string name="enter_tran_pwd">请输入交易密码</string>
+    <string name="register_agree">注册即表示您同意</string>
+    <string name="agreement">《赢天下服务协议》</string>
+    <string name="ownaccount_login">已有账号，马上登陆</string>
+    <string name="identify_code_cannot_empty">手机验证码不能为空</string>
+    <string name="loginpwd_cannot_empty">登录密码不能为空</string>
+
+    <string name="can_cashout_money">可提取金额：</string>
+    <string name="frozen_cashout_money">冻结金额：</string>
+
+    <string name="money">金额</string>
+    <string name="enter_cashout_money">请输入提现金额</string>
+    <string name="cardholder">持卡人</string>
+    <string name="enter_cardholder_name">请输入持卡人姓名</string>
+    <string name="selected_bank">银行名称</string>
+    <string name="subordinate_branch">所属支行</string>
+    <string name="enter_branch_name">请输入银行支行名称</string>
+    <string name="bankcard_no">银行卡号</string>
+    <string name="cashout_now">立即提现</string>
+    <string name="cashout_notice1">注：100元内提现扣2元手续费,超过100元不用扣手续费</string>
+    <string name="cashout_notice2">充值成功后自动绑定银行卡</string>
+    <string name="nickname">昵称</string>
+    <string name="enter_nickname">请输入昵称</string>
+    <string name="nickname_cannot_empty">昵称不能为空</string>
+    <string name="network_error">网络错误，请稍后再试</string>
+
+    <string name="total_pl_point">总盈亏</string>
+    <string name="total_trade_point">总单数</string>
+    <string name="total_amount_point">总手数</string>
+    <string name="select_goods">选择交易商品</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="confirm_buildposition">确认建仓</string>
+    <string name="goods_point">交易品：</string>
+    <string name="buildposition_point">建仓价：</string>
+    <string name="number_point">数量：</string>
+    <string name="paymoney_point">支付总额：</string>
+    <string name="use_redpacket">使用赢家券(每次建仓只可使用一张)</string>
+
+    <string name="order_no">订单号</string>
+    <string name="buildposition_time">建仓时间</string>
+    <string name="evening_up_time">平仓时间</string>
+    <string name="tran_goods">交易商品</string>
+    <string name="evening_up_price">平仓价</string>
+    <string name="stored_number">入仓数量</string>
+    <string name="pay_money">支付金额</string>
+    <string name="commission">手续费</string>
+    <string name="profit_loss_amount">盈亏金额</string>
+    <string name="evening_up_type">平仓类型</string>
+    <string name="evening_up_income">平仓收入</string>
+    <string name="order_detail">订单详情</string>
+
+    <string name="activity_login_pwd">当前密码</string>
+    <string name="update_login_pwd">请输入当前密码</string>
+    <string name="activity_login_new_pwd">新置密码</string>
+    <string name="update_login_new_pwd">请输入新置密码</string>
+    <string name="activity_login_confirm_pwd">确认密码</string>
+    <string name="update_login_confirm_pwd">再次输入新置密码</string>
+    <string name="pssword_reset">确认修改</string>
+
+    <string name="activity_reset_pwd">交易密码</string>
+    <string name="activity_enter_reset_pwd">请输入交易密码</string>
+    <string name="activity_reset_btn">确认</string>
+
+    <string name="activity_user_image">头像</string>
+    <string name="activity_user_telphone">手机号</string>
+    <string name="activity_user_password">修改交易密码</string>
+    <string name="activity_user_secutiy">账户安全</string>
+    <string name="activity_user_update">修改</string>
+    <string name="activity_setting_suggestion">意见反馈</string>
+    <string name="activity_setting_wins">关于赢天下</string>
+    <string name="activity_setting_version">版本检查</string>
+    <string name="activity_center_tran">交易中心</string>
+    <string name="activity_center_sys">系统消息</string>
+
+    <string name="activity_hot_name">交易品名称</string>
+    <string name="confirm_unbund">确认解绑</string>
+
+    <!-- 极光推送-->
+
+
+    <string name="function_not_open">功能还没有开放</string>
+    <string name="share_to_qq_title">您有个10元投资红包等待开启！</string>
+    <string name="share_to_qq_content">我参与了赢天下的分享活动，送给你10元钱可买一手，带你领略当下投资新潮，平台低风险、高收益、及时提现。</string>
+    <string name="try_again">点击重试</string>
+
+    <!--推广赚钱-->
+    <string name="string_promotion_mycommission">我的佣金: </string>
+    <string name="string_promotion_withdraw">提取</string>
+    <string name="string_promotion_commission_rate">佣金比例</string>
+    <string name="string_promotion_myinvited">我的邀请</string>
+    <string name="string_promotion_text_invitecode">邀请专属码</string>
+    <string name="string_promotion_user_invitecode">您的邀请码: </string>
+    <string name="string_promotion_button_copy">复制</string>
+    <string name="string_promotion_text_earn">如何赚钱</string>
+    <string name="string_promotion_text_earn_1">发送推广链接给朋友</string>
+    <string name="string_promotion_text_earn_2">点击链接注册成为您邀请的用户</string>
+    <string name="string_promotion_text_earn_3">您的邀请用户开始操盘交易</string>
+    <string name="string_promotion_text_earn_4">您即可开启佣金赚钱模式</string>
+    <string name="string_promotion_invitefriend">马上邀请好友</string>
+    <string name="string_promotion_text_wechat">微信好友</string>
+    <string name="string_promotion_text_circle">微信朋友圈</string>
+    <string name="string_promotion_text_qq">QQ好友</string>
+    <string name="string_promotion_text_qrcode">二维码</string>
+    <string name="string_promotion_text_weibo">新浪微博</string>
+    <string name="string_promotion_text_qqzone">QQ空间</string>
+    <string name="enter_key_words">输入你的关键字</string>
+    <string name="title">title_transaction</string>
+    <string name="international_rule">赢天下期货交易辅助系统使用风险揭示书
+\n\t\t\t\t尊敬的客户：
+\n\t\t\t\t根据有关规定，就您申请使用本系统的有关事项，向您提供本《期货交易辅助系统使用风险提示书》(下称风险揭示书)。风险揭示书建立在您已经仔细阅读并完全理解所有内容后，由您自愿承诺并签订的。
+\n\t\t\t\t系统及交易、开户、结算均由香港灿辉国际有限公司提供，大连盈科兆力商品经纪有限公司受香港灿辉国际有限公司委托仅提供保证金结算业务，不对交易及其他业务负责，
+\n\t\t\t\t本系统是期货辅助交易软件，投资者使用本系统可实现“快速开仓”，“自动平仓”等功能。
+\n\t\t\t\t期货辅助交易软件是半自动化交易，软件本身有可能存在风险。考虑使用本软件进行半自动化期货交易时，您应当明确使用本软件除了其它交易手段共同具有的风险外，还存在且不限于下列风险：
+\n\t\t\t\t一、由于计算机故障以及网络数据传输等原因，指令可能会出现中断、延迟、停顿、数据错误等情况，不能完全保证所有的交易都严格在限定的参数内完成交易。
+\n\t\t\t\t二、本系统只是交易辅助工具，仅协助您按设定好的参数进行辅助开仓，自动平仓操作，并不能保证交易能够获利。
+\n\t\t\t\t三、由于国家法律、行业规范、交易所规定(如：头寸限制、开仓数量限制等 ) 导致本系统无法正常交易的情况，赢天下不承担任何责任和义务。
+\n\t\t\t\t四、由于程序化交易的或有风险、程序化交易软件的或有缺陷以及其它各种可能的不可预知的原因，您的交易可能受到影响;同时本系统采用全内存交易的方式，一旦因为软件或其它未知原因而导致系统出错，无法根据使用者设定的参数进行自动交易在出现软件故障时，请使用者及时与赢天下客服联系，联系电话：0755-61648350，但这并不表示赢天下对相关故障或问题能够得以解决的承诺，不代表赢天下公司对此负相关任何责任。
+\n\t\t\t\t五、本系统将于每个交易时间段收盘前5分钟开始进行强平操作，这个时间段客户无法通过本系统委托下单，由此产生的交易结果均由使用者自行承担。
+\n\t\t\t\t六、本系统服务器将与北京时间同步，请客户同步安装客户端的机器时间。因为时间不同步导致产生的交易风险，期货公司及赢天下不承担任何责任。
+\n\t\t\t\t七、本系统提供了部分交易所未提供的交易方式，使用者应详细了解运行机制后方可使用，由此产生的交易结果均由使用者自行承担。
+\n\t\t\t\t由于上述风险的存在，赢天下对本系统进行的辅助性半自动交易的准确性及出错发生均不做任何形式的担保，同时对由此可能会给您带来的损失不承担任何责任和义务。
+\n\t\t\t\t由于网络科技的发展和进步日新月异，本《赢天下期货交易辅助系统使用风险揭示书》无法揭示所有风险。故您在采用本系统进行辅助性半自动化交易之前，应细心研究并熟悉本系统的所有细节。
+\n\t\t\t\t您利用本系统进行期货交易，应积极采取安全措施，如：定期维护电脑及互联网设备、采用防病毒及防黑客产品、妥善保管个人资料等，以防范电子化交易可能发生的各种风险。因此，如果您不了解或者不能承受采用本系统交易的风险，本公司建议您不要使用本系统进行交易。如果您申请或已使用本系统进行交易，即系您明确表明您已经完全了解使用本系统进行交易的风险，准备承受风险并准备承担由此带来的可能损失。
+赢天下期货交易辅助系统使用风险揭示书》与《账户委托管理协议》签订人必须为同一人，否则本风险揭示书视为无效。本风险揭示书的最终解释权归大连盈科兆力商品经纪有限公司所有。
+\n\t\t\t\t本人已全面阅读并理解上述提示内容，全面同意并接受上述内容,并承诺:
+\n\t\t\t\t一、本人已经详细地了解大连盈科兆力商品经纪有限公司的所有交易规则，(平台名称：赢天下)各类商品的基础知识、风险及交易规则，愿意接受赢天下平台所有交易规则;
+\n\t\t\t\t二、本人承诺亲自签署 《赢天下期货交易辅助系统使用风险揭示书》 ，了解风险揭示书，完全理解各类风险情况，明确交易过程中存在较大收益的同时也存在较大风险，自愿承担由此造成的风险，以及由此带来的一切可能的损失，包括但不限于当行情剧烈波动造成的较大亏损甚至保证金不足以缴付实际亏损的情况。
+\n\t\t\t\t三、本人了解交易系统各项功能及可能存在的风险，交易过程中将充分考虑此类风险，谨慎使用。
+\n\t\t\t\t四、本人已经满足开户条件并且非大连盈科兆力商品经纪有限公司禁入人员。
+\n\t\t\t\t五、本人不将交易账号、交易密码及出入金密码泄露给任何人，由于密码泄露造成的一切损失，本人自行承担。
+\n\t\t\t\t六、本人不听信、不接受任何人提供的明确买卖交易信息或指令。
+\n\t\t\t\t七、本人不将交易账户通过任何方式交给任何人进行委托或者代理交易。
+\n\t\t\t\t八、本人承诺资金来源渠道正规，并无违法犯纪行为。
+\n\t\t\t\t以上风险提示书，大连盈科兆力商品经纪有限公司已经在发布本系统之前向本单位(本人)出示本说明，本单位(本人)已阅读并完全理解，对该系统的使用风险已经有清晰认识并自愿承担因使用大连盈科兆力商品经纪有限公司提供的赢天下股指期货交易辅助系统进行的自动化交易而可能产生的所有风险和损失，如不同意请勿继续操作。
+\n\t\t\t\t授权经办人：大连盈科兆力商品经纪有限公司
+\n\t\t\t\t客户(或开户授权人)
+\n\t\t\t\t签字(及、或盖章)：
+\n\t\t\t\t签署日期: 年 月 日</string>
+
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.shawnway.nav.app.wtw.view.ProgressLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progress_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_addressList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/divider_normal" />
+
+    <TextView
+        android:id="@+id/add_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5ff"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_14"
+        android:paddingTop="@dimen/dp_14"
+        android:text="添加新地址"
+        android:textSize="15sp" />
+
+</com.shawnway.nav.app.wtw.view.ProgressLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_divider"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:layout_marginTop="@dimen/normal_marginTop"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp_14">
+
+        <TextView
+            style="@style/TextView_Main_gray"
+            android:text="@string/can_cashout_money" />
+
+        <TextView
+            android:id="@+id/fragment_withdraw_useable_balance"
+            style="@style/TextView_white_small"
+            android:text="0.00"
+            android:textColor="@color/lightred" />
+
+        <TextView
+            style="@style/TextView_Main_gray"
+            android:text="元" />
+
+
+        <TextView
+            style="@style/TextView_Main_gray"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="@string/frozen_cashout_money" />
+
+        <TextView
+            android:id="@+id/fragment_withdraw_frozen_balance"
+            style="@style/TextView_white_small"
+            android:text="0.00"
+            android:textColor="@color/lightred" />
+
+        <TextView
+            style="@style/TextView_Main_gray"
+            android:text="元" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="@string/money" />
+
+        <EditText
+            android:id="@+id/fragment_withdraw_amount"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:hint="@string/enter_cashout_money"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/space_15_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="@string/cardholder" />
+
+        <EditText
+            android:id="@+id/fragment_withdraw_cardholder"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:hint="@string/enter_cardholder_name"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/space_1_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="所属地" />
+
+        <TextView
+            android:id="@+id/fragment_withdraw_province"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:hint="请选择支行所属地"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:src="@mipmap/arr_d" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/space_1_height" />
+
+    <include layout="@layout/space_1_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="@string/opening_bank" />
+
+        <TextView
+            android:id="@+id/fragment_withdraw_bankname"
+            style="@style/EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:hint="@string/selected_bank"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+
+        <!--<ImageView
+            android:id="@+id/fragment_cashout_iv_selectbank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arr_d"
+            android:padding="10dp"
+            android:background="@drawable/selector_clickable_textgray_bg"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>-->
+
+    </RelativeLayout>
+
+    <include layout="@layout/space_1_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="@string/subordinate_branch" />
+
+        <EditText
+            android:id="@+id/fragment_withdraw_branchname"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:hint="@string/enter_branch_name"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/space_1_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:text="@string/bankcard_no" />
+
+        <TextView
+            android:id="@+id/fragment_withdraw_cardno"
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:hint="@string/enter_bankcard_no"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fragment_withdraw_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_main_bigbtn_bg"
+        android:text="@string/cashout_now"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        style="@style/TextView_Main_gray"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/normal_marginTop"
+        android:text="@string/cashout_notice1" />
+
+    <TextView
+        style="@style/TextView_Main_gray"
+        android:layout_gravity="center"
+        android:text="@string/cashout_notice2" />
+
+</LinearLayout>

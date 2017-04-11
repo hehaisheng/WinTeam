@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/include_top_gray"/>
+    <include layout="@layout/space_15_height"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/TextView_Main_black"
+            android:text="@string/tran_pwd"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin"/>
+
+        <EditText
+            style="@style/EditText"
+            android:id="@+id/activity_unbundbankcard_et_tranpwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:inputType="numberPassword"
+            android:background="@null"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:hint="@string/enter_tran_pwd"/>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/TextView_Main_gray"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:text="输入交易密码，以解绑银行卡"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/activity_unbundbankcard_btn"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/normal_margin"
+        android:layout_marginRight="@dimen/normal_margin"
+        android:text="@string/confirm_unbund"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_main_bigbtn_bg"
+        android:textSize="18sp"/>
+</LinearLayout>

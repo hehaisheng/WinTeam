@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/header"
+        android:gravity="center"
+        android:textColor="@color/lightred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_4"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/dp_4"
+        android:text="实盘功能尚未开放\n敬请期待" />
+
+
+</LinearLayout>

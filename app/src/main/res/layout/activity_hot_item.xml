@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/selector_fragment_user_bg"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false">
+
+        <CheckBox
+            android:id="@+id/cb_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_weight="0.2"
+            android:button="@drawable/cb_single_choice" />
+
+        <TextView
+            android:id="@+id/activity_hot_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/cb_choice"
+            android:focusable="false"
+            android:text="贵金属"
+            android:textColor="@color/user_textColor" />
+    </RelativeLayout>
+
+    <include layout="@layout/space_1_height" />
+</LinearLayout>

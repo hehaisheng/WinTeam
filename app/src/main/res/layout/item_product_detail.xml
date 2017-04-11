@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_product_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.shawnway.nav.app.wtw.view.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/proName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_22"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/text_primary"
+            tools:text="商品名称" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <TextView
+                android:id="@+id/proCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                tools:text="商品编码: G1234" />
+
+            <TextView
+                android:id="@+id/proPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:textColor="@color/text_gray"
+                tools:text="市场价 ¥1234" />
+
+            <TextView
+                android:id="@+id/proAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:textColor="@color/text_gray"
+                tools:text="库存: 34" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_8">
+
+            <TextView
+                android:id="@+id/proDisPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sal"
+                android:drawablePadding="@dimen/dp_6"
+                android:textColor="@color/textColor_yellow"
+                android:textSize="16sp"
+                tools:text="1000积分" />
+
+            <TextView
+                android:id="@+id/proNaturePrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:drawableLeft="@drawable/ori"
+                android:drawablePadding="@dimen/dp_6"
+                android:textColor="@color/text_gray"
+                android:textSize="16sp"
+                tools:text="1000积分" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_14"
+            android:background="#ffeded"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/dp_6"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingTop="@dimen/dp_6">
+
+            <TextView
+                android:id="@+id/exchangedAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="已有234人兑换" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_36">
+
+                <ImageView
+                    android:id="@+id/addQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add" />
+
+                <TextView
+                    android:id="@+id/proQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_pro_num"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/dp_14"
+                    android:paddingRight="@dimen/dp_14"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/reduceQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reduce" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_14"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="商品说明"
+            android:textColor="@color/text_primary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@color/divider_color" />
+
+
+        <TextView
+            android:id="@+id/proDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_14"
+            android:ellipsize="end"
+            android:lines="5"
+            android:text="商品说明哈哈哈哈哈哈" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_14"
+            android:background="@color/divider_color" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_divider"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.shawnway.nav.app.wtw.view.ProgressLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.shawnway.nav.app.wtw.view.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+
+            <include layout="@layout/space_10_height" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_info_transtrawrapper"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/fragment_info_leftimg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/sta" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/fragment_info_leftimg1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_transtrategy"
+                        android:textColor="@color/user_textColor"
+                        android:textSize="@dimen/main_black_TextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twoText_verdis"
+                        android:text="@string/next_earn_money"
+                        android:textColor="@color/user_textColor_gray"
+                        android:textSize="@dimen/main_gray_TextSize" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:src="@mipmap/arr_s" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/space_1_height" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_info_roomwrapper"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/fragment_info_leftimg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/bro" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/fragment_info_leftimg2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/info_directsedroom"
+                        android:textColor="@color/user_textColor"
+                        android:textSize="@dimen/main_black_TextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twoText_verdis"
+                        android:text="@string/richlife"
+                        android:textColor="@color/user_textColor_gray"
+                        android:textSize="@dimen/main_gray_TextSize" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:src="@mipmap/arr_s" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/space_1_height" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_info_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/selector_fragment_user_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/fragment_info_leftimg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/newicon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/fragment_info_leftimg3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wtw_information_tabtitle"
+                        android:textColor="@color/user_textColor"
+                        android:textSize="@dimen/main_black_TextSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/twoText_verdis"
+                        android:text="@string/info_wherever"
+                        android:textColor="@color/user_textColor_gray"
+                        android:textSize="@dimen/main_gray_TextSize" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin"
+                    android:src="@mipmap/arr_s" />
+
+            </RelativeLayout>
+        </com.shawnway.nav.app.wtw.view.ProgressLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

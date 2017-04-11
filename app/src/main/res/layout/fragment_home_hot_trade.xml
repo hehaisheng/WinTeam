@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/line_divider" />
+
+    <LinearLayout
+        android:id="@+id/rl_plus"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_hotTran_height"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tab_hot_trade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:tabIndicatorColor="@color/appcolor"
+            android:background="@android:color/white"
+            android:textSize="13sp"
+            app:tabSelectedTextColor="@color/appcolor"
+            app:tabTextColor="@color/text_primary" />
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_4"
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_fragment_user_bg"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/edi"
+            android:text="@string/home_more"
+            android:textColor="@color/lightyellow"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider_normal" />
+
+    <FrameLayout
+        android:id="@+id/fl_hot_trade"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/dp_8"
+        android:background="@android:color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_divider" />
+
+</LinearLayout>

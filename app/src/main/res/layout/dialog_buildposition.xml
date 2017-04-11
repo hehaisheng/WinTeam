@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/appcolor"
+        android:gravity="center">
+
+        <TextView
+            style="@style/TextView_white_littlebig"
+            android:textSize="14sp"
+            android:text="@string/confirm_buildposition"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="@string/goods_point"/>
+
+        <TextView
+            android:id="@+id/dialog_buildposition_goodsname"
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="粤银300g"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="@string/buildposition_point"/>
+
+        <TextView
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="0.00元"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="@string/number_point"/>
+
+        <TextView
+            android:id="@+id/dialog_buildposition_amount"
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="1手"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="@string/paymoney_point"/>
+
+        <TextView
+            android:id="@+id/dialog_buildposition_paymoney"
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="0.00"/>
+        <TextView
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="元"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/dialog_buildposition_redwrapper"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sel"/>
+        <TextView
+            android:layout_marginLeft="@dimen/normal_margin"
+            style="@style/TextView_white_normal"
+            android:textColor="@color/user_textColor"
+            android:text="@string/use_redpacket"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60.0dip"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_buildposition_btn_cancel"
+            style="@style/TextView_white_littlebig"
+            android:layout_width="114.0dip"
+            android:layout_height="40.0dip"
+            android:background="@drawable/btn_cancel_selector"
+            android:gravity="center"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/dialog_buildposition_btn_ok"
+            style="@style/TextView_white_littlebig"
+            android:layout_width="114.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:background="@drawable/btn_ok_selector"
+            android:gravity="center"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+
+</LinearLayout>

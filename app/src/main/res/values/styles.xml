@@ -1,0 +1,257 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/appcolor</item>
+        <item name="colorPrimaryDark">@color/appcolor</item>
+    </style>
+
+    <style name="Theme.AppStartLoadTranslucent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="InterNationalDetail" parent="AppTheme"></style>
+
+
+    <style name="TextView_Main_black">
+        <item name="android:textSize">@dimen/main_black_TextSize</item>
+        <item name="android:textColor">@color/user_textColor</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView_Main_gray">
+        <item name="android:textSize">@dimen/main_gray_TextSize</item>
+        <item name="android:textColor">@color/user_textColor_gray</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView_white_small">
+        <item name="android:textSize">@dimen/main_gray_TextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView_white_normal">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView_black_normal" parent="TextView_white_normal">
+        <item name="android:textColor">@color/user_textColor</item>
+    </style>
+
+    <style name="TextView_lightred_normal" parent="TextView_white_normal">
+        <item name="android:textColor">@color/lightred</item>
+    </style>
+
+    <style name="TextView_lightgreen_normal" parent="TextView_white_normal">
+        <item name="android:textColor">@color/lightgreen</item>
+    </style>
+
+    <style name="TextView_lightyellow_normal" parent="TextView_white_normal">
+        <item name="android:textColor">@color/lightyellow</item>
+    </style>
+
+    <style name="TextView_lightyellow_littlebig" parent="TextView">
+        <item name="android:textColor">@color/lightyellow</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="TextView_lightred_littlebig" parent="TextView">
+        <item name="android:textColor">@color/lightred</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="TextView_white_littlebig" parent="TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="TextView_lightred_big">
+        <item name="android:textSize">@dimen/main_black_TextSize</item>
+        <item name="android:textColor">@color/lightred</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:textColor">@drawable/textcolor_textview_black</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/btn_transparent_gray_noborder</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextView.bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.yellow" parent="TextView">
+        <item name="android:textColor">@drawable/textcolor_textview_yellow</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+
+
+    <style name="Button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">64.0dip</item>
+        <item name="android:minHeight">40.0dip</item>
+    </style>
+
+    <style name="Button.main" parent="@style/Button">
+        <item name="android:textColor">@drawable/selector_tranaccount_btn_textcolor</item>
+        <item name="android:background">@drawable/bg_tranaccount_btn</item>
+        <item name="android:paddingLeft">17.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">17.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:lineSpacingExtra">0.0sp</item>
+    </style>
+
+    <style name="Button.money" parent="@style/Button">
+        <item name="android:textColor">@drawable/selector_tranaccount_money_textcolor</item>
+        <item name="android:background">@drawable/bg_tranaccount_moneybtn</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:lineSpacingExtra">0.0sp</item>
+    </style>
+
+    <style name="Button.main.medium" parent="@style/Button.main">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">0.0dip</item>
+        <item name="android:minHeight">0.0dip</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/user_textColor</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">start</item>
+        <item name="android:background">@drawable/edit_text_light</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditText.password" parent="EditText">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_checkbox</item>
+    </style>
+
+
+    <style name="CustomDialog">
+        <item name="android:windowEnterAnimation">@anim/window_in</item>
+        <item name="android:windowExitAnimation">@anim/window_out</item>
+    </style>
+
+    <style name="paddingLeftRight">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <!--正常文本的TextView-->
+    <style name="normalTextStyle" parent="android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!--颜色灰色的TextView-->
+    <style name="grayTextStyle" parent="android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!--分割线样式-->
+    <style name="diliverStyle" parent="android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/diliver_gray</item>
+    </style>
+
+    <!--dialogfragment样式-->
+    <style name="dialogFrament" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>    <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>    <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>    <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/appcolor</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="tabBackground">@color/white</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/appcolor</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <!--重置金额的RadioButton-->
+    <style name="cb_money" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_4</item>
+        <item name="android:layout_margin">@dimen/dp_6</item>
+        <item name="android:background">@drawable/bg_money_charge</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+
+    </style>
+    <!--加载的Dialog-->
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:id="@+id/iv_express_radius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_express_radius"
+            android:layout_centerHorizontal="true"
+            android:background="@color/diliver_gray" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_4"
+        android:weightSum="2"
+
+        >
+
+        <TextView
+            android:id="@+id/acceptStation"
+            style="@style/grayTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text="【上海市嘉定区安亭新镇公司】 已收件【"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/acceptTime"
+            style="@style/grayTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:text="2016-11-15 20:32:25"
+            android:textSize="@dimen/sp_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp_8"
+            android:layout_weight="0.2">
+
+            <View
+                style="@style/diliverStyle"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

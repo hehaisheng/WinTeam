@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_4"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14">
+
+        <TextView
+            android:id="@+id/consignee"
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            tools:text="张某某" />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/normalTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="134*****567" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/normalTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/dp_14"
+        android:paddingRight="@dimen/dp_14"
+        tools:text="收货地址：广东省广州市海珠区哈哈" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dp_14"
+        android:background="@color/divider_normal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_14">
+
+        <CheckBox
+            android:id="@+id/cb_defaultAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:button="@drawable/cb_single_choice"
+            android:paddingLeft="@dimen/dp_8"
+            android:textColor="@color/text_gray"
+            tools:checked="true"
+            tools:text="默认地址" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/cut_sma"
+            android:drawablePadding="@dimen/dp_8"
+            android:text="删除"
+            android:textColor="@color/text_gray" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_8"
+            android:layout_toLeftOf="@id/tv_delete"
+            android:drawableLeft="@drawable/edit"
+            android:drawablePadding="@dimen/dp_8"
+            android:text="编辑"
+            android:textColor="@color/text_gray" />
+    </RelativeLayout>
+
+
+</LinearLayout>

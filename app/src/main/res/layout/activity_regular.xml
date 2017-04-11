@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_top_gray"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
+            style="@style/TextView_black_normal"
+            android:text="1、交割滞纳金:"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="因不持仓过夜，故不产生交割滞纳金费用。如持仓单在结算点前未平仓，系统会以当天的收盘价对订单进行结算。"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
+            style="@style/TextView_black_normal"
+            android:text="2、止损、止盈的设置："/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="止损价、止盈价可选择为浮动盈亏额达到保证金的10%、20%、30%、40%、50%,或不选择。"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
+            style="@style/TextView_black_normal"
+            android:text="3、 交易时间："/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="粵银和粵油：每周一08:00 am 至周六04:00 am (冬、夏令时）"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="粵铜：夏令时:每周一早上08:00至周六凌晨02:00、冬令时:每周一早上09:00至周六凌晨03:00"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
+            style="@style/TextView_black_normal"
+            android:text="4、结算时间:"/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="粵银和粵油：夏令时：每天的04:00 am —— 06:00 am 、冬令时：每天的04:00am —— 07:00am"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="粵铜：夏令时：凌晨02:00 —早上08:00、冬令时：凌晨03:00—早上09:00"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
+            style="@style/TextView_black_normal"
+            android:text="5、 申请充值及提现的时间："/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="周一到周五08:00am到22:30pm(节假日除外）"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/normal_margin"
+            style="@style/TextView_black_normal"
+            android:text="6、 充值与提现规则："/>
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="A 、 充值限额：单笔5000,单曰2万；"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="B 、 金额小于100元一需支付提现手续费2元/次、金额大于等于100元一无需支付提现手费；"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            style="@style/TextView_black_normal"
+            android:text="C 、 提现到账时间：提现申请成功后需要三个工作曰内到账（周六曰及节假曰除外）。"/>
+
+
+        <TextView
+            style="@style/TextView_lightred_normal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="粤国际微盘——是广东国际=商品交易中心推出微信微盘交易，依托7亿用户的微信社交平台研发，集交易、营销、市场开发等多功能一体的全新移动互联工具。粤国际微盘由广东省国资委全程监管督查，证照齐备经营规范，与建设银行、中信银行、平安银行等权威机构有长期合作关系，并受其监督，权威认证，值得信懒。"/>
+    </LinearLayout>
+
+</ScrollView>

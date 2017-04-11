@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--title的高度-->
+    <!--个人中心个人信息的bg高度-->
+    <!--轮播图中点的间距-->
+
+    <dimen name="normal_margin">15dp</dimen>
+    <dimen name="normal_marginTop">10dp</dimen>
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="twoText_verdis">5dp</dimen>
+
+    <dimen name="main_black_TextSize">14sp</dimen>
+    <dimen name="main_gray_TextSize">11sp</dimen>
+    <!--我的赢家券中money字体的大小-->
+    <dimen name="myticket_money_textsize">30sp</dimen>
+
+    <dimen name="main_btn_height">30dp</dimen>
+
+    <dimen name="home_hotTran_height">35dp</dimen>
+    <dimen name="home_news_item_height">60dp</dimen>
+    <dimen name="home_news_item_btn_textSize">11sp</dimen>
+    <dimen name="home_econcalen_black_textSize">16sp</dimen>
+
+    <dimen name="openingtran_normal_height">40dp</dimen>
+    <dimen name="openingtran_big_height">55dp</dimen>
+    <dimen name="openingtran_2_marginleft">90dp</dimen>
+
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+
+
+</resources>

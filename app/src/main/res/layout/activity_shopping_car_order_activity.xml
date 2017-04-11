@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.shawnway.nav.app.wtw.view.ProgressLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_defaultAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/dp_14">
+
+                <TextView
+                    android:id="@+id/consignee"
+                    style="@style/normalTextStyle"
+                    tools:text="收货人：钟先生" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/normalTextStyle"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right"
+                    tools:text="12345678900" />
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/normalTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/consignee"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableRight="@mipmap/arr_s"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    tools:text="收货地址：123123123123123123123123123" />
+
+                <TextView
+                    android:id="@+id/without_address"
+                    style="@style/grayTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="没有默认地址，请添加收货地址"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/normalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@android:color/white"
+                android:padding="@dimen/dp_14"
+                android:text="您选择的商品" />
+
+            <com.shawnway.nav.app.wtw.view.WithoutTouchRecyclerView
+                android:id="@+id/rv_order_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/dp_14">
+
+                <TextView
+                    style="@style/normalTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配送方式：" />
+
+                <TextView
+                    style="@style/normalTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="包邮" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="@dimen/dp_14">
+
+                <TextView
+                    style="@style/normalTextStyle"
+                    android:layout_height="wrap_content"
+                    android:text="订单备注：" />
+
+                <EditText
+                    android:id="@+id/remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="（选填）"
+                    android:padding="0dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginRight="@dimen/dp_14"
+                android:background="@color/divider_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_14">
+
+
+                <TextView
+                    android:id="@+id/totalPoint"
+                    style="@style/normalTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    tools:text="小计：1000积分" />
+
+                <TextView
+                    android:id="@+id/totalProductAmount"
+                    style="@style/normalTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_toLeftOf="@id/totalPoint"
+                    tools:text="共计1件商品" />
+
+            </RelativeLayout>
+
+
+        </com.shawnway.nav.app.wtw.view.ProgressLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/userPoint"
+            style="@style/normalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            tools:text="剩余：0积分" />
+
+        <TextView
+            android:id="@+id/conclusion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/appcolor"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_14"
+            android:paddingRight="@dimen/dp_14"
+            android:text="提交订单"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/orderPoint"
+            style="@style/normalTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_toLeftOf="@id/conclusion"
+            android:text="合计：0积分" />
+
+    </RelativeLayout>
+
+</LinearLayout>

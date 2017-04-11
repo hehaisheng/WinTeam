@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp">
+
+    <TextView
+        android:id="@+id/mall_adr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/dp_4"
+        android:drawableTop="@drawable/lot"
+        android:gravity="center"
+        android:text="积分抽奖"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/unreal_trade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/dp_4"
+        android:drawableTop="@drawable/mul"
+        android:gravity="center"
+        android:text="模拟交易"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/earn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/dp_4"
+        android:drawableTop="@drawable/rul"
+        android:gravity="center"
+        android:text="积分赚取"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="@dimen/dp_4"
+        android:drawableTop="@drawable/sig"
+        android:gravity="center"
+        android:text="签到"
+        android:textSize="12sp" />
+
+
+</LinearLayout>

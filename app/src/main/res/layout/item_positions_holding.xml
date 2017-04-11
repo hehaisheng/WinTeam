@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp_10">
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/goods_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="美原油(CL1610)" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/ll_top"
+        android:layout_marginTop="8dp"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/ll_profit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/order_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            tools:text="买跌1手" />
+
+        <TextView
+            android:id="@+id/marketPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_22"
+            android:layout_weight="2.5"
+            tools:text="- -" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_stopWin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_profit"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/stopWin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:minWidth="80dp"
+            tools:text="止盈2772元" />
+
+        <TextView
+            android:id="@+id/executionPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            tools:text="买入价47" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sellProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_stopWin"
+        android:layout_marginRight="@dimen/dp_22"
+        android:background="@drawable/bg_international_login"
+        android:gravity="center"
+        android:paddingBottom="@dimen/dp_4"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_4"
+        android:text="平仓"
+        android:textColor="@color/lightred" />
+
+    <LinearLayout
+        android:id="@+id/ll_stopLoss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_stopWin"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/stopLoss"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minWidth="80dp"
+            tools:text="止损2772元" />
+
+        <TextView
+            android:id="@+id/currentPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            tools:text="现价47" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_hold_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_stopLoss"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:minWidth="80dp"
+            android:text="持仓时间  ：" />
+
+        <TextView
+            android:id="@+id/executionDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="2016-08-29 19:23:35" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_hold_time"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="80dp"
+            android:text="订单号      ：" />
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.5"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:maxLines="1"
+            tools:text="88888888888888" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

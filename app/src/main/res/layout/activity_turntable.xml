@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/line_divider"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_top_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.shawnway.nav.app.wtw.view.LuckyPanView
+            android:id="@+id/id_luckypan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:padding="35dp"/>
+
+        <ImageView
+            android:id="@+id/id_start_btn"
+            android:src="@mipmap/start"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            style="@style/TextView_lightred_big"
+            android:textSize="15sp"
+            android:text="每次抽奖消耗两百积分"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/acivity_turntable_integral_wrapper"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:id="@id/acivity_turntable_integral_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/activity_turntable_winner_wrapper"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                style="@style/TextView_white_littlebig"
+                android:textSize="22sp"
+                android:text="您还剩余"/>
+
+            <TextView
+                android:id="@+id/activity_turntable_tv_integral"
+                style="@style/TextView_lightred_big"
+                android:textSize="22sp"
+                android:text="0"/>
+
+            <TextView
+                style="@style/TextView_white_littlebig"
+                android:textSize="22sp"
+                android:text="积分"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@id/activity_turntable_winner_wrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/activity_turntable_tv_winner_phone"
+                style="@style/TextView_white_littlebig"
+                android:textSize="15sp"
+                android:text="恭喜***********"/>
+
+            <TextView
+                android:id="@+id/activity_turntable_tv_winner_goods"
+                style="@style/TextView_lightred_big"
+                android:textSize="15sp"
+                android:text="抽中0积分"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

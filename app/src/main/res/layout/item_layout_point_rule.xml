@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:id="@+id/rl_point_rule"
+    android:layout_marginTop="@dimen/dp_14"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/point_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="6dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/text_primary"
+        tools:text="积分名字" />
+
+    <TextView
+        android:id="@+id/point_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/point_name"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginTop="8dp"
+        android:textSize="13sp"
+        tools:text="邀请好友送积分" />
+
+    <TextView
+        android:id="@+id/point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_22"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="15sp"
+        tools:text="+100" />
+
+
+</RelativeLayout>

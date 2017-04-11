@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_centerVertical="true"
+    android:background="@drawable/selector_fragment_user_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_indicator"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/appcolor" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/view_indicator"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/item_goodsname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:textSize="15sp"
+                tools:text="粤油" />
+
+            <TextView
+                android:id="@+id/goods_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_4"
+                android:textColor="@color/text_gray"
+                android:textSize="12sp"
+                tools:text="CL" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_quopage_chg"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_14"
+        android:background="@drawable/bg_tv_chg_rate"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:text="-2.82%" />
+
+    <TextView
+        android:id="@+id/item_quopage_lasttrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_toLeftOf="@id/item_quopage_chg"
+        android:textColor="@color/lightgreen"
+        android:textSize="14sp"
+        tools:text="1650" />
+
+    <include
+        layout="@layout/space_1_height"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
+

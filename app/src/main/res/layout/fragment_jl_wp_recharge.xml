@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/divider_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_14"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_8">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_8"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="银行卡号"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/dp_4"
+                android:layout_marginTop="@dimen/dp_4"
+                android:background="@color/divider_normal" />
+
+            <EditText
+                android:id="@+id/et_bankCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入银行卡号"
+                android:inputType="number"
+                android:padding="0dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="充值金额"
+            android:textColor="@color/text_gray" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_6">
+
+            <CheckBox
+                android:id="@+id/cb5000"
+                style="@style/cb_money"
+                android:checked="true"
+                android:text="5000元" />
+
+            <CheckBox
+                android:id="@+id/cb2000"
+                style="@style/cb_money"
+                android:text="2000元" />
+
+            <CheckBox
+                android:id="@+id/cb1000"
+                style="@style/cb_money"
+                android:text="1000元" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/cb500"
+                style="@style/cb_money"
+                android:text="500元" />
+
+            <CheckBox
+                android:id="@+id/cb100"
+                style="@style/cb_money"
+                android:text="100元" />
+
+            <CheckBox
+                android:id="@+id/cb_customize"
+                style="@style/cb_money"
+                android:text="自定义金额" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/dp_8"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:id="@+id/ll_customize_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/et_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入充值金额"
+                android:inputType="number"
+                android:padding="0dp"
+                android:textColor="@color/text_primary"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp_8"
+                android:text="元"
+                android:textColor="@color/text_primary" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_marginRight="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_14"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tv_confirm_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/bg_charge"
+            android:text="微信充值"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/tv_confirm_alipay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/bg_charge"
+            android:text="支付宝充值"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

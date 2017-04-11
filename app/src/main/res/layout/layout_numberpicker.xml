@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/min" />
+
+    <TextView
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="#ffcccccc" />
+
+    <EditText
+        android:gravity="center"
+        android:background="@drawable/bg_pro_num"
+        android:id="@+id/input"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="0dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="1.0px"
+        android:layout_height="fill_parent"
+        android:background="#ffcccccc" />
+
+    <ImageView
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/add_qty" />
+
+</LinearLayout>

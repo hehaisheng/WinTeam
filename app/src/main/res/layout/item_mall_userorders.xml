@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        style="@style/paddingLeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/mall_order_orderTime"
+            style="@style/normalTextStyle"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="- - - -" />
+
+        <TextView
+            android:id="@+id/mall_order_tradeStatus"
+            style="@style/normalTextStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="- - - -"
+            android:textColor="@color/appcolor" />
+
+
+    </RelativeLayout>
+
+    <TextView style="@style/diliverStyle" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mall_order_products"
+        style="@style/paddingLeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/diliver_gray"
+        android:nestedScrollingEnabled="false">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView style="@style/diliverStyle" />
+
+    <RelativeLayout
+        style="@style/paddingLeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/mall_order_total_productAmount"
+            style="@style/normalTextStyle"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_mall_order_total_product_point"
+            android:text="共- - - -件商品" />
+
+        <TextView
+            android:id="@+id/tv_mall_order_total_product_point"
+            style="@style/normalTextStyle"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/mall_order_total_product_point"
+            android:text="合计:" />
+
+        <TextView
+            android:id="@+id/mall_order_total_product_point"
+            style="@style/normalTextStyle"
+            android:layout_alignParentRight="true"
+            android:text="- - - -积分"
+            android:textColor="@color/lightyellow" />
+
+    </RelativeLayout>
+
+    <TextView style="@style/diliverStyle" />
+
+    <RelativeLayout
+        android:id="@+id/layout_order_button"
+        style="@style/paddingLeftRight"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/button_del_order"
+                    android:layout_width="85dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_order_selector_gray"
+                    android:gravity="center"
+                    android:text="删除订单"
+                    android:textColor="@color/diliver_gray_600"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/button_check_Logistics"
+                    android:layout_width="85dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/btn_order_selector_gray"
+                    android:gravity="center"
+                    android:text="查看物流"
+                    android:textColor="@color/diliver_gray_600"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/button_received"
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_order_selector_red"
+                android:gravity="center"
+                android:text="确认收货"
+                android:textColor="@color/lightred"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/diliver_gray" />
+
+</LinearLayout>

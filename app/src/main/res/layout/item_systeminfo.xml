@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_fragment_user_bg">
+
+    <include layout="@layout/space_12_height"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/item_systeminfo_title"
+            style="@style/TextView_Main_black"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/normal_margin"
+            android:text="行情提醒"/>
+
+        <TextView
+            android:id="@+id/item_systeminfo_time"
+            style="@style/TextView_Main_gray"
+            android:textSize="13sp"
+            android:layout_marginRight="@dimen/normal_margin"
+            android:layout_alignParentRight="true"
+            android:text="2016-08-14 10:28"/>
+    </RelativeLayout>
+
+    <include layout="@layout/space_1_height"/>
+
+    <TextView
+        android:id="@+id/item_systeminfo_content"
+        android:background="@color/white"
+        style="@style/TextView_black_normal"
+        android:paddingLeft="@dimen/normal_margin"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="【上涨提醒】粤银（kg）8分钟内上涨达0.5%。多单盈利空间5.00%（空单注意），请及时关注"/>
+
+</LinearLayout>

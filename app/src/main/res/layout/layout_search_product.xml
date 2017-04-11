@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_search_product"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_marginLeft="@dimen/dp_14"
+    android:layout_marginRight="@dimen/dp_14"
+    android:background="@drawable/shape_product_search_bg"
+
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingTop="@dimen/dp_6"
+    android:visibility="invisible"
+    tools:visibility="visible">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:src="@drawable/ser_sma" />
+
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/et_search_product"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:background="@null"
+        android:hint="@string/enter_key_words"
+        android:imeOptions="actionSearch"
+        android:maxLines="1"
+        android:padding="0dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="#91ffffff"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/iv_search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:src="@drawable/ic_search_clear"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
+

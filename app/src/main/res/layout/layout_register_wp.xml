@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_register_wp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_14"
+        android:gravity="center"
+        tools:text="还未注册微盘"
+        android:textColor="@color/text_primary"
+        android:textSize="@dimen/sp_16" />
+
+    <TextView
+        android:id="@+id/register_wp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_14"
+        android:background="@color/appcolor"
+        android:gravity="center"
+        android:text="立即注册"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>
